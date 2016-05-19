@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "5.1"
+before_install: "git config user.email bot@travis-ci.org && git config user.name travis && npm version 1.0.$TRAVIS_BUILD_NUMBER"
+deploy:
+  provider: npm
+  email: npm@hidefsoftware.co.uk
+  api_key:
+    secure: Qy58wkrXqI0g3CJB/0RjKvVCAvpK2eO1Qv2c22IeVWRh2mKR3oXvb3v7wERTkTc37H+v12bfpMcz4aLXcCPKBcT0E0UGvYMVC7y7JllqHDh+r5lfd6Wgi05MBO+HhctG3qmFax3i5bmqDmypWlDKYMgykEURlP5Pt0IAfQUsqbCiKhBy8oaLKTSlgAqj7YPuQWfKtb1MLTt6f+KHcvAfC/7f0TPXUPYJtmxInLSxksKa2BLJAy9x22nYVRvcoQ7ow4U50ZGcK+7G42MgElJ/7qqNzSUnXzQemc4Qx7YvQCa6Qt1Ol8obt+/qdKvxE2D7/pVEVoJ3kG8tjZzGJK9POSRWmJ+9+yLrvoQMz46sPcG5MKmW+3Az1Ksu0/kOWhYoeEJ1F8QJoNrf3Ii3vNqc1YNLCCrdvqPW1eRpDwhB6k/imOqSHtzlBq1H/XCIahWvobYm3q/mvK/cB7qwMdFsSW9BYcx701k6/Ak9Em3RCuzZnCALniQypL/AjP5CAbTOHtkwpasQOLVd6vcNC0bzWgCURU8XYNEU93byIjZeii0GG+xUegFvg7mDjRh9JmG/yLYFidpZEG4BchTO9fTiV747BKeBnyD4/bwqAh7Liqjrm5a+ufwrm9N2+YbJ/t35hAX+YQ/AEtZ3bkWrG48SfFa6QHsZXJbsVGZRTaw8kOU=
+  on:
+    branch: master
+    repo: uatec/react-features
