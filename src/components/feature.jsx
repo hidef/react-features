@@ -9,13 +9,11 @@ class Feature extends React.Component {
 
     render() {
         var featureConfig = this.context.features[this.props.featureKey];
-
         if (featureConfig) {
-            return <span>
-                {this.props.children.map(Child => {
-                    return <Child {...featureConfig} />
-                }) }
-            </span>
+            var configMappedChildren = React.Children.map(this.props.children, child => {
+                return React.cloneElement(child, { featureConfig: featureConfig });
+            });
+            return <span>{configMappedChildren}</span>;
         } else {
             return null;
         }
@@ -27,7 +25,7 @@ Feature.propTypes = {
 };
 
 Feature.contextTypes = {
-    features: React.propTypes.object.isRequired
+    features: React.PropTypes.object.isRequired
 };
 
 export default Feature;
