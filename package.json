@@ -10,7 +10,9 @@
         "jsx-loader": "^0.13.2",
         "file-loader": "^0.8.5",
         "babel-loader": "^6.2.4",
-        "babel-core": "*"
+        "babel-core": "^6.9.0",
+        "babel-preset-es2015": "^6.9.0",
+        "babel-preset-react": "^6.5.0"
     },
     "scripts": {
         "install": "./node_modules/.bin/webpack"
