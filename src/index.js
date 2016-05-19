@@ -1,8 +1,7 @@
-import React from 'react';
+import Feature from './components/feature.jsx';
+import FeatureContainer from './components/featureContainer.jsx';
 
-// Validate react
-var thing = <div>
-        Hello World
-    </div>;
-
-export { thing };
+export { 
+    Feature,
+    FeatureContainer
+};
