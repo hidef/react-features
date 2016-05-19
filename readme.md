@@ -2,7 +2,7 @@
 [![bitHound Dependencies](https://www.bithound.io/github/uatec/react-features/badges/dependencies.svg)](https://www.bithound.io/github/uatec/react-features/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/uatec/react-features/badges/devDependencies.svg)](https://www.bithound.io/github/uatec/react-features/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/uatec/react-features/badges/code.svg)](https://www.bithound.io/github/uatec/react-features)
-
+[![Travis CI Build](https://api.travis-ci.org/uatec/react-features.svg)](https://travis-ci.org/uatec/react-features)
 
 ##Example Usage:
 
