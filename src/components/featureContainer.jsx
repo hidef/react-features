@@ -3,35 +3,30 @@ import React from 'react';
 
 class FeatureContainer extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-        // copy this.props.features to context
-    }
-
     getChildContext() {
         return {
-            features: this.props.features
+            features: this.props.features,
         };
     }
 
     render() {
-        return <span>
+        return (<span>
             {this.props.children}
-        </span>;
+        </span>);
     }
 }
 
 FeatureContainer.propTypes = {
-    features: React.PropTypes.object
+    features: React.PropTypes.object.isRequired,
+    children: React.PropTypes.element.isRequired,
 };
 
 FeatureContainer.defaultProps = {
-    features: {}
+    features: {},
 };
 
 FeatureContainer.childContextTypes = {
-    features: React.PropTypes.object
+    features: React.PropTypes.object,
 };
 
 export default FeatureContainer;

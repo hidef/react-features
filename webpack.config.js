@@ -10,7 +10,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.(js|jsx)/,
-                loader: 'jsx-loader?harmony!babel'
+                loader: 'jsx-loader?harmony!babel!eslint-loader'
             },
             {
                 test: /\.css$/,

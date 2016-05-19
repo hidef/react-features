@@ -3,29 +3,24 @@ import React from 'react';
 
 class Feature extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-        var featureConfig = this.context.features[this.props.featureKey];
+        const featureConfig = this.context.features[this.props.featureKey];
         if (featureConfig) {
-            var configMappedChildren = React.Children.map(this.props.children, child => {
-                return React.cloneElement(child, { featureConfig: featureConfig });
-            });
+            let configMappedChildren = React.Children.map(this.props.children,
+                child => React.cloneElement(child, { featureConfig }));
             return <span>{configMappedChildren}</span>;
-        } else {
-            return null;
         }
+        return null;
     }
 }
 
 Feature.propTypes = {
-    featureKey: React.PropTypes.string
+    featureKey: React.PropTypes.string.isRequired,
+    children: React.PropTypes.element.isRequired,
 };
 
 Feature.contextTypes = {
-    features: React.PropTypes.object.isRequired
+    features: React.PropTypes.object.isRequired,
 };
 
 export default Feature;
