@@ -1,3 +1,9 @@
+[![bitHound Overall Score](https://www.bithound.io/github/uatec/react-features/badges/score.svg)](https://www.bithound.io/github/uatec/react-features)
+[![bitHound Dependencies](https://www.bithound.io/github/uatec/react-features/badges/dependencies.svg)](https://www.bithound.io/github/uatec/react-features/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/uatec/react-features/badges/devDependencies.svg)](https://www.bithound.io/github/uatec/react-features/master/dependencies/npm)
+[![bitHound Code](https://www.bithound.io/github/uatec/react-features/badges/code.svg)](https://www.bithound.io/github/uatec/react-features)
+
+
 ##Example Usage:
 
 1: Declare your feature configuration:
