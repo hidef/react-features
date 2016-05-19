@@ -16,7 +16,8 @@
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",
     "webpack": "^1.13.0",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "react-dom": "^15.0.2"
   },
   "scripts": {
     "test": "mocha test/.setup.js test/**/*.test.js",
