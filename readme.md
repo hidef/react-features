@@ -40,3 +40,11 @@ class WorldComponent extends React.Component {
     }
 }
 ```
+
+##Demo
+You can view the demo running in webpack-dev-server to see the components in action.
+
+```
+npm start
+open http://localhost:8080/public
+```

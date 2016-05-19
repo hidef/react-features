@@ -15,9 +15,11 @@
     "jsx-loader": "^0.13.2",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2",
-    "webpack": "^1.13.0"
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "test": "mocha test/.setup.js test/**/*.test.js"
+    "test": "mocha test/.setup.js test/**/*.test.js",
+    "start": "./node_modules/.bin/webpack-dev-server"
   }
 }
