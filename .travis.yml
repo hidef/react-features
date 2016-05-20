@@ -2,6 +2,8 @@ language: node_js
 node_js:
 - '5.1'
 before_install: git config user.email bot@travis-ci.org && git config user.name travis && npm version 1.0.$TRAVIS_BUILD_NUMBER
+before_deploy:
+  bithound check git@github.com:uatec/react-features.git
 deploy:
   provider: npm
   email: npm@hidefsoftware.co.uk
