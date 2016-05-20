@@ -6,6 +6,10 @@
 [![bitHound Code](https://www.bithound.io/github/uatec/react-features/badges/code.svg)](https://www.bithound.io/github/uatec/react-features)
 [![Travis CI Build](https://api.travis-ci.org/uatec/react-features.svg)](https://travis-ci.org/uatec/react-features)
 
+## Get Started
+
+This package is available on npm as [react-features](https://www.npmjs.com/package/react-features).
+
 ## Example Usage
 
 1: Declare your feature configuration:
